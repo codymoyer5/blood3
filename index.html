@@ -120,7 +120,7 @@ body {
 		
 		// Add census tract of blood lead in Philadelphia GeoJSON Data
 		var neighborhoodsLayer = null;
-		$.getJSON("lab11/blood_lead.geojson",function(data){
+		$.getJSON("blood_lead.geojson",function(data){
 		    neighborhoodsLayer = L.geoJson(data, {
 		    	style: styleFunc,
 		    	onEachFeature: onEachFeature
